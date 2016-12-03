@@ -2,12 +2,12 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="5374.jp金沢版" />
+    <meta property="og:title" content="5374.jp 江戸川区版" />
     <meta property="og:type" content="product" />
-    <meta property="og:url" content="http://kanazawa.5374.jp/" />
+    <meta property="og:url" content="http://edogawa.5374.jp/" />
     <meta property="og:description" content="Code for Kanazawaの作った5374.jpは貴方の地域で、いつ、どのゴミが回収されるのか、簡単に知る事ができます。" />
-    <meta property="og:image" content="http://kanazawa.5374.jp/img/ogp.png" />
-    <meta name="Keywords" content="金沢市,5374,ごみ,ゴミ収集日" />
+    <meta property="og:image" content="http://edogawa.5374.jp/img/ogp.png" />
+    <meta name="Keywords" content="江戸川区,5374,ごみ,ゴミ収集日" />
     <meta name="description" content="Code for Kanazawaの作った5374.jpは貴方の地域で、いつ、どのゴミが回収されるのか、簡単に知る事ができます。" />
     <title>5374(ｺﾞﾐﾅｼ).jp</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -19,9 +19,33 @@
   </head>
   <body>
   <style id="accordion-style" type="text/css"></style>
+  <!-- 江戸川区 注意事項 -->
+  <div id="help">
+    お住まいの地域の決められた曜日の朝8時までにごみ・資源を集積所にお出しください。<br>
+    年末年始のごみ収集は下記と異なります。時期が近づきましたら、江戸川区ホームページ・広報紙などで確認してください。
+  </div>
   <div id="accordion"></div>
   <select class="form-control" id="select_area"></select>
   <div class="accordion" id="accordion3">
+    <div class="accordion-group-top">
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion4" href="#collapse4_0">江戸川区版</a>
+      </div>
+      <div id="collapse4_0" class="accordion-body collapse">
+        <div class="accordion-inner">
+           <a href="http://codeforkanazawa.org/">Code for Kanazawa</a>が開発した<a href="https://github.com/codeforkanazawa-org/5374">5374</a>に、江戸川区が公開している<a href="https://www.city.edogawa.tokyo.jp/kuseijoho/open-data/index.html">オープンデータ</a>を編集・加工して登録しました。
+          <h4>利用データ</h4>
+          <p><a target="_blank" href="https://www.city.edogawa.tokyo.jp/smph/kuseijoho/open-data/index.html">江戸川区オープンデータ</a>（「<a href="https://www.city.edogawa.tokyo.jp/smph/gomi_recycle/yobihyo.html">ごみ収集・資源回収地域別曜日</a>」「<a href="https://www.city.edogawa.tokyo.jp/smph/gomi_recycle/hinmoku/index.html">ごみ・資源品目別一覧</a>」更新日：2016年8月30日）を編集・加工。<br>
+          掲載内容がまちがっている場合は、制作者までお知らせいただけると幸いです。</p>
+
+          <h4>制作者</h4>
+          <a href="telabo.jp">TELABO（てらぼ）</a>
+
+          <h4>リンク</h4>
+          <a href="http://www.city.edogawa.tokyo.jp/gomi_recycle/index.html">江戸川区ホームページ：ごみ・リサイクル</a>
+        </div>
+      </div>
+    </div>
     <div class="accordion-group-top">
       <div class="accordion-heading">
         <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_0">5374.jpについて</a>
@@ -69,9 +93,9 @@ CfKは市民のための組織です。行政や民間企業の影響を受け�
   <script src="js/jquery-1.10.2.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) 
+  <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond)
   <script src="js/respond.js"></script>
-  -->  
+  -->
   <!-- ブックマークお勧めポップアップ追加-->
   <script src="js/bookmark-bubble/bookmark_bubble.min.js"></script>
   <script src="js/bookmark-bubble/example/example.min.js"></script>
